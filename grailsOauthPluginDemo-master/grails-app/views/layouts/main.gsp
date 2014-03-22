@@ -32,7 +32,7 @@
 </div>
 
 <div class="footer">
-    <a href="https://github.com/manishkbharti/grailsOauthPluginDemo">Grails Oauth Plugin Demo</a>
+    <a href="https://github.com/evmandre/Devproject/tree/master/grailsOauthPluginDemo-master">Grails Oauth Plugin Demo</a>
 </div>
 
 <div id="spinner" class="spinner" style="display:none;">
