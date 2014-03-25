@@ -32,10 +32,16 @@
                     <td>${resp}</td>
                     <td>${data[resp]}</td>
                 </tr>
+	    	<g:if test="${resp == 'username'}">
+     			<div class="footer">
+    		    	<a href="https://www.facebook.com/${data[resp]}">Personal Facebook Homepage</a>
+			</div>
+	    	</g:if>
             </g:each>
             </tbody>
         </table>
     </div>
+
 </g:if>
 </body>
 </html>
