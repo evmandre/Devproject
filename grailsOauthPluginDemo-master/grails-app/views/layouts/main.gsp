@@ -41,6 +41,59 @@
 
 <g:javascript library="application"/>
 
+<div id="container">
+	
+	<p>Below is an example of the "classic" Facebook Share Button on a non-Facebook Web page.</p>
+	
+	<div id="fb-root"></div>
+	
+	<!-- USE 'Asynchronous Loading' version, for IE8 to work
+	http://developers.facebook.com/docs/reference/javascript/FB.init/ -->
+	
+	<script>
+	  window.fbAsyncInit = function() {
+		FB.init({
+		  appId  : '613994308679685',
+		  status : true, // check login status
+		  cookie : true, // enable cookies to allow the server to access the session
+		  xfbml  : true  // parse XFBML
+		});
+	  };
+	
+	  (function() {
+		var e = document.createElement('script');
+		e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+		e.async = true;
+		document.getElementById('fb-root').appendChild(e);
+	  }());
+	</script>
+	
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script>
+	
+	<img id = "share_button" src = "http://1.bp.blogspot.com/-MDx9Ky2zmok/Ucl52kGbtaI/AAAAAAAACXE/bTombFUpX-4/s1600/FaceIcon.png">
+	
+	<script type="text/javascript">
+	$(document).ready(function(){
+	$('#share_button').click(function(e){
+	e.preventDefault();
+	FB.ui(
+	{
+	method: 'feed',
+	name: 'HyperArts Blog',
+	link: 'http://hyperarts.com/blog',
+	picture: 'http://www.hyperarts.com/_img/TabPress-LOGO-Home.png',
+	caption: 'I love HyperArts tutorials',
+	description: 'The HyperArts Blog provides tutorials for all things Facebook',
+	message: ''
+	});
+	});
+	});
+	</script>
+	
+		
+	</div>
+
 <r:layoutResources/>
 </body>
 </html>
