@@ -80,11 +80,11 @@
 	FB.ui(
 	{
 	method: 'feed',
-	name: 'HyperArts Blog',
-	link: 'http://hyperarts.com/blog',
-	picture: 'http://www.hyperarts.com/_img/TabPress-LOGO-Home.png',
-	caption: 'I love HyperArts tutorials',
-	description: 'The HyperArts Blog provides tutorials for all things Facebook',
+	name: 'Diablo III Blog',
+	link: 'http://diablo3blog.blogspot.dk/',
+	picture: 'http://diablo3wallpaper.com/file/78/600x338/16:9/diablo-3-reaper_1434083937.jpg',
+	caption: 'Welcome to Reaper of Souls',
+	description: 'The Diablo 3 blog provides news and tutorials for the game',
 	message: ''
 	});
 	});
