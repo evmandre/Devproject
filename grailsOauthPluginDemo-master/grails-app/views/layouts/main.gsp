@@ -31,9 +31,19 @@
     <g:layoutBody/>
 </div>
 
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=613994308679685";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <div class="footer">
     <a href="https://github.com/evmandre/Devproject/tree/master/grailsOauthPluginDemo-master">Grails Oauth Plugin Demo</a>
 </div>
+	<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 
 <div id="spinner" class="spinner" style="display:none;">
     <g:message code="spinner.alt" default="Loading&hellip;"/>
@@ -53,7 +63,7 @@
 	<script>
 	  window.fbAsyncInit = function() {
 		FB.init({
-		  appId  : 'ap_id',
+		  appId  : '613994308679685',
 		  status : true, // check login status
 		  cookie : true, // enable cookies to allow the server to access the session
 		  xfbml  : true  // parse XFBML
